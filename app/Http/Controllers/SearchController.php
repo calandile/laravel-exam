@@ -18,9 +18,8 @@ class SearchController extends Controller
 
         $title = $request->title;
 
-        $response = Http::get("http://www.omdbapi.com/?s={$title}&apikey={$key}")['Search'];
+        $response = Http::get("http://www.omdbapi.com/?s={$title}&plot=short&apikey={$key}")['Search'];
 
-        // dd($response);
         return view('result')->with(compact('response'));
     }
 }
