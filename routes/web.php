@@ -21,9 +21,11 @@ Route::get('/', [SearchController::class, 'index']);
 
 Route::post('/result', [SearchController::class, 'search']);
 
-Route::post('result/favorite', [FavoriteController::class, 'create']);
+Route::get('/result', [FavoriteController::class, 'store']);
 
-Route::get('favorites', [FavoriteController::class, 'index']);
+Route::post('/result/favorite', [FavoriteController::class, 'create']);
+
+Route::get('/favorites', [FavoriteController::class, 'index']);
 
 Route::get('/surprise', [SurpriseController::class, 'surprise']);
 
