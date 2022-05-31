@@ -1,7 +1,9 @@
 @extends('layouts.default')
 @section('content')
-    <section>
-        <div class="mt-96 flex justify-center">
+    {{-- TODO: Move form to the components --}}
+    <section class="flex justify-center">
+        <div
+            class="mt-24 rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <form method="POST" action="/result" class="flex flex-col items-center">
                 @csrf
                 <div class="relative">

@@ -5,10 +5,34 @@
     @include('includes.head')
 </head>
 
-<body class="scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100 bg-gray-100">
+<body class="my-24 bg-gray-100">
     <main class="container mx-auto">
         @yield('content')
     </main>
 </body>
+
+{{-- Background --}}
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
 </html>

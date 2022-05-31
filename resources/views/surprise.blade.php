@@ -1,7 +1,11 @@
 @extends('layouts.default')
 @section('content')
+    {{-- TODO: "Add to favorites" button --}}
     <section>
-        <a href="/">Back</a>
+        <a href="/">
+            <button type="button"
+                class="mb-2 rounded-lg bg-purple-700 px-5 py-2.5 text-sm font-medium text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Back
+                to home</button></a>
         <div class="flex flex-col">
             @foreach ($response as $result)
                 <div
