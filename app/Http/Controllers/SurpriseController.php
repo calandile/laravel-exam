@@ -9,10 +9,10 @@ class SurpriseController extends Controller
 {
     public function surprise(Request $request)
     {
-        $collection = collect(["naruto", "massimo", "woof", "spiderman", "shrek"]);
-        $surprise = $collection->random();
+        $key = config('services.omdb.key');
 
-        $key = "c9e02642";
+        $collection = collect(["naruto", "massimo", "woof", "spiderman", "shrek", "pirates"]);
+        $surprise = $collection->random();
 
         $response = Http::get("http://www.omdbapi.com/?s={$surprise}&apikey={$key}")['Search'];
 
