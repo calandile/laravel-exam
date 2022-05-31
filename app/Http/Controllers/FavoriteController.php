@@ -22,11 +22,15 @@ class FavoriteController extends Controller
         $favorite->title = $request->title;
         $favorite->save();
 
-        // return redirect('result');
+        //TODO: Prevent duplicate db records
+
+        return redirect('/');
+
+        //TODO: Redirect to result
     }
 
     public function delete($id)
     {
-        //
+        //TODO: Delete the record from db
     }
 }
